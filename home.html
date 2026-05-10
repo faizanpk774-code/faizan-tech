@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faizan Technologies — Scalable, High Converting Web Solutions</title>
+  <meta name="description" content="Faizan Technologies builds modern web apps, eCommerce platforms, cloud & DevOps, and pixel-perfect UI/UX for ambitious brands.">
+  <meta property="og:title" content="Faizan Technologies">
+  <meta property="og:description" content="Tech partner for scalable, high-converting digital solutions.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="min-h-screen bg-background text-foreground relative z-10">
+    <!-- NAV -->
+    <header class="sticky top-0 z-40 backdrop-blur-md bg-background/70 border-b border-border/60">
+      <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+        <a href="home.html" class="flex items-center gap-2">
+          <span class="h-9 w-9 rounded-xl bg-[image:var(--gradient-brand)] grid place-items-center text-brand-foreground font-display font-bold shadow-brand">
+            F
+          </span>
+          <div class="leading-tight">
+            <div class="font-display font-bold text-lg">Faizan<span class="text-brand">.</span>tech</div>
+            <div class="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">Faizan Technologies</div>
+          </div>
+        </a>
+        <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+          <a href="home.html" class="hover:text-brand transition-colors">Home</a>
+          <a href="about.html" class="hover:text-brand transition-colors">About</a>
+          <a href="works.html" class="hover:text-brand transition-colors">Works</a>
+          <a href="#contact" class="hover:text-brand transition-colors">Contact</a>
+        </nav>
+        <div class="flex items-center gap-4">
+          <button id="theme-toggle" class="rounded-full bg-secondary text-secondary-foreground px-3 py-2 text-sm font-medium hover:bg-secondary/80 transition-colors">
+            <span id="theme-icon">🌙</span>
+          </button>
+          <a href="https://wa.link/yxoxsf" class="rounded-full bg-ink text-background px-5 py-2.5 text-sm font-medium hover:bg-brand transition-colors">
+            Let's Connect
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="relative overflow-hidden bg-grid reveal reveal-top">
+      <div class="absolute -top-40 -right-40 h-[500px] w-[500px] rounded-full bg-[image:var(--gradient-brand)] opacity-20 blur-3xl"></div>
+      <div class="max-w-7xl mx-auto px-6 pt-16 pb-24 grid lg:grid-cols-2 gap-12 items-center relative">
+        <div>
+          <div class="inline-flex items-center gap-2 rounded-full border border-border bg-background/60 px-4 py-1.5 text-xs font-medium text-muted-foreground">
+            <span class="h-1.5 w-1.5 rounded-full bg-brand animate-pulse"></span>
+            Trusted by industry experts • 5★ rapid response
+          </div>
+          <h1 class="mt-6 text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05]">
+            Tech Partner for <span class="text-gradient-brand">Scalable</span>, High Converting Solutions.
+          </h1>
+          <p class="mt-6 text-lg text-muted-foreground max-w-xl">
+            Faizan Technologies designs, builds and scales web products that move the needle — from custom eCommerce to full-stack engineering and cloud DevOps.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#contact" class="rounded-full bg-[image:var(--gradient-brand)] text-brand-foreground px-7 py-3.5 font-medium shadow-brand hover:scale-[1.02] transition-transform">
+              Start a Project
+            </a>
+            <a href="works.html" class="rounded-full border border-border px-7 py-3.5 font-medium hover:bg-secondary transition-colors">
+              View Our Work
+            </a>
+          </div>
+          <div class="mt-12 grid grid-cols-3 gap-6 max-w-md">
+            <div>
+              <div class="text-3xl md:text-4xl font-display font-bold">120+</div>
+              <div class="text-xs text-muted-foreground mt-1 uppercase tracking-wider">Happy Clients</div>
+            </div>
+            <div>
+              <div class="text-3xl md:text-4xl font-display font-bold">20+</div>
+              <div class="text-xs text-muted-foreground mt-1 uppercase tracking-wider">Masteries</div>
+            </div>
+            <div>
+              <div class="text-3xl md:text-4xl font-display font-bold">60+</div>
+              <div class="text-xs text-muted-foreground mt-1 uppercase tracking-wider">Projects</div>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="absolute inset-0 bg-[image:var(--gradient-brand)] rounded-[3rem] blur-2xl opacity-30"></div>
+          <div class="relative rounded-[3rem] bg-card border border-border shadow-soft overflow-hidden">
+            <img src="hero-portrait.png" alt="Faizan Technologies — Full Stack Team" width="1024" height="1024" class="w-full h-auto">
+            <div class="absolute bottom-6 left-6 right-6 rounded-2xl bg-background/90 backdrop-blur p-4 border border-border">
+              <div class="text-xs text-muted-foreground uppercase tracking-wider">The WebSmiths</div>
+              <div class="font-display font-semibold">Web · DevOps · CMS · UI/UX</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="max-w-7xl mx-auto px-6 py-24">
+      <div class="max-w-3xl">
+        <div class="text-xs uppercase tracking-[0.25em] text-brand font-semibold">Services</div>
+        <h2 class="mt-3 text-4xl md:text-5xl font-bold">
+          You're not just hiring a developer — you're partnering with a team that genuinely cares about your success.
+        </h2>
+      </div>
+      <div class="mt-14 grid md:grid-cols-2 gap-6 reveal reveal-right">
+        <article class="group rounded-3xl border border-border bg-card p-8 hover:border-brand transition-all hover:shadow-brand">
+          <div class="text-xs uppercase tracking-wider text-muted-foreground">Development</div>
+          <h3 class="mt-2 text-2xl font-bold group-hover:text-brand transition-colors">Web Development</h3>
+          <p class="mt-4 text-muted-foreground leading-relaxed">We build robust applications using MERN, WordPress, and OpenCart. From full-stack web apps to custom plugins and API integrations, we deliver secure, scalable, and high-performing solutions — including complete eCommerce platforms with seamless checkout.</p>
+        </article>
+        <article class="group rounded-3xl border border-border bg-card p-8 hover:border-brand transition-all hover:shadow-brand">
+          <div class="text-xs uppercase tracking-wider text-muted-foreground">DevOps</div>
+          <h3 class="mt-2 text-2xl font-bold group-hover:text-brand transition-colors">Cloud & DevOps</h3>
+          <p class="mt-4 text-muted-foreground leading-relaxed">We automate and optimize cloud infrastructure with AWS, Docker, Kubernetes and CI/CD pipelines via GitHub Actions and Jenkins. Terraform, Ansible, Grafana and Prometheus power scalable, secure deployments and proactive monitoring.</p>
+        </article>
+        <article class="group rounded-3xl border border-border bg-card p-8 hover:border-brand transition-all hover:shadow-brand">
+          <div class="text-xs uppercase tracking-wider text-muted-foreground">Design</div>
+          <h3 class="mt-2 text-2xl font-bold group-hover:text-brand transition-colors">UI / UX Design</h3>
+          <p class="mt-4 text-muted-foreground leading-relaxed">Modern, mobile-responsive designs focused on user experience, brand identity and SEO. With Core Web Vitals optimization your website loads fast, ranks higher and engages users with a clean layout that drives conversions.</p>
+        </article>
+        <article class="group rounded-3xl border border-border bg-card p-8 hover:border-brand transition-all hover:shadow-brand">
+          <div class="text-xs uppercase tracking-wider text-muted-foreground">Systems Administration</div>
+          <h3 class="mt-2 text-2xl font-bold group-hover:text-brand transition-colors">Architecture Management</h3>
+          <p class="mt-4 text-muted-foreground leading-relaxed">Deep expertise in Linux servers, DNS and email infrastructure. From server hardening and malware removal to SPF/DKIM/DMARC setup, we provide full-stack infrastructure support and seamless hosting or migration across cloud platforms.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process" class="max-w-7xl mx-auto px-6 py-24">
+      <div class="max-w-2xl mb-14">
+        <div class="text-xs uppercase tracking-[0.25em] text-brand font-semibold">Process</div>
+        <h2 class="mt-3 text-4xl md:text-5xl font-bold">From idea to launch in 3 focused steps.</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6 reveal reveal-right">
+        <div class="rounded-3xl bg-card border border-border p-8 relative overflow-hidden">
+          <div class="text-xs uppercase tracking-[0.2em] text-brand font-semibold">Step 1.</div>
+          <h3 class="mt-3 text-2xl font-bold">Discovery & Consultation</h3>
+          <p class="mt-4 text-muted-foreground leading-relaxed">We start with a quick call to understand your vision, goals and technical needs — asking the right questions to uncover the best approach.</p>
+        </div>
+        <div class="rounded-3xl bg-card border border-border p-8 relative overflow-hidden">
+          <div class="text-xs uppercase tracking-[0.2em] text-brand font-semibold">Step 2.</div>
+          <h3 class="mt-3 text-2xl font-bold">Proposal & Planning</h3>
+          <p class="mt-4 text-muted-foreground leading-relaxed">You receive a detailed project plan with timelines, milestones and a clear cost breakdown. Once approved, we set up the environment and prepare assets.</p>
+        </div>
+        <div class="rounded-3xl bg-card border border-border p-8 relative overflow-hidden">
+          <div class="text-xs uppercase tracking-[0.2em] text-brand font-semibold">Step 3.</div>
+          <h3 class="mt-3 text-2xl font-bold">Development & Launch</h3>
+          <p class="mt-4 text-muted-foreground leading-relaxed">Using agile practices we ship in phases with regular updates. After revisions and final testing, your product goes live — fully optimized and ready to perform.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-6 py-24">
+        <div class="rounded-[3rem] bg-[image:var(--gradient-brand)] text-brand-foreground p-12 md:p-20 relative overflow-hidden shadow-brand reveal reveal-left">
+          <div class="absolute -top-20 -right-20 h-80 w-80 rounded-full bg-background/10 blur-3xl"></div>
+          <div class="relative max-w-2xl">
+            <div class="text-xs uppercase tracking-[0.25em] font-semibold opacity-80">Collaboration</div>
+            <h2 class="mt-3 text-5xl md:text-6xl font-bold leading-tight">
+              Got a project? <br>Let's talk.
+            </h2>
+            <p class="mt-6 text-lg opacity-90">
+              Ready to take your online presence to the next level? We're here to help boost your brand's visibility with smart, tailored solutions.
+            </p>
+            <div class="mt-8 flex flex-wrap gap-3 items-center">
+              <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" class="rounded-full bg-ink text-background px-7 py-3.5 font-medium hover:scale-[1.02] transition-transform inline-flex items-center gap-2">
+                faizanpk774@gmail.com →
+              </a>
+              <a href="works.html" class="rounded-full border border-background/30 px-7 py-3.5 font-medium hover:bg-background/10 transition-colors">
+                See our work
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-border">
+      <div class="max-w-7xl mx-auto px-6 py-10 flex flex-wrap items-center justify-between gap-4 text-sm text-muted-foreground">
+        <div>© 2026 Faizan Technologies. All rights reserved.</div>
+        <div class="flex gap-6">
+          <a href="https://www.facebook.com/muhammad.faizan.776350" class="hover:text-brand">Facebook</a>
+          <a href="https://www.linkedin.com/in/muhammad-faizan-ab4822360/" class="hover:text-brand">LinkedIn</a>
+          <a href="https://github.com/faizanpk774" class="hover:text-brand">GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Theme toggle functionality
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+    const html = document.documentElement;
+
+    // Check for saved theme preference or default to light mode
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    html.classList.toggle('dark', savedTheme === 'dark');
+    updateThemeIcon(savedTheme);
+
+    themeToggle.addEventListener('click', () => {
+      const isDark = html.classList.toggle('dark');
+      const theme = isDark ? 'dark' : 'light';
+      localStorage.setItem('theme', theme);
+      updateThemeIcon(theme);
+    });
+
+    function updateThemeIcon(theme) {
+      themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
+    }
+
+    function initScrollReveal() {
+      const elements = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window)) {
+        elements.forEach(el => el.classList.add('revealed'));
+        return;
+      }
+
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+            obs.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.15
+      });
+
+      elements.forEach(el => observer.observe(el));
+    }
+
+    // Smooth page navigation without reload
+    document.addEventListener('click', (e) => {
+      const link = e.target.closest('a[href$=".html"]');
+      if (!link || link.target === '_blank' || e.ctrlKey || e.metaKey) return;
+
+      const href = link.getAttribute('href');
+      if (href === window.location.pathname.split('/').pop() || href === window.location.href.split('/').pop()) return;
+
+      e.preventDefault();
+      loadPage(href);
+    });
+
+    function loadPage(url) {
+      const mainContent = document.querySelector('.min-h-screen');
+      mainContent.style.opacity = '0.5';
+      
+      fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(html, 'text/html');
+          const newContent = doc.querySelector('.min-h-screen');
+          
+          if (newContent) {
+            mainContent.innerHTML = newContent.innerHTML;
+            window.history.pushState(null, '', url);
+            window.scrollTo(0, 0);
+            initScrollReveal();
+            attachNavListeners();
+            mainContent.style.opacity = '1';
+          }
+        })
+        .catch(() => window.location.href = url);
+    }
+
+    function attachNavListeners() {
+      document.querySelectorAll('a[href$=".html"]').forEach(link => {
+        link.addEventListener('click', (e) => {
+          if (link.target === '_blank' || e.ctrlKey || e.metaKey) return;
+          e.preventDefault();
+          loadPage(link.getAttribute('href'));
+        });
+      });
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      initScrollReveal();
+      attachNavListeners();
+    });
+
+    window.addEventListener('popstate', () => {
+      loadPage(window.location.pathname.split('/').pop() || 'home.html');
+    });
+  </script>
+</body>
+</html>
