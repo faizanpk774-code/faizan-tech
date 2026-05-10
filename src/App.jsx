@@ -71,9 +71,24 @@ function App() {
     []
   );
 
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const closeMobileMenu = () => setMobileMenuOpen(false);
+
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [mobileMenuOpen]);
+
   return (
     <div className="min-h-screen bg-background text-foreground relative z-10">
-      <header className="sticky top-0 z-40 backdrop-blur-md bg-background/70 border-b border-border/60">
+      <header className="sticky top-0 z-40 relative backdrop-blur-md bg-background/70 border-b border-border/60">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
           <Link to="/" className="flex items-center gap-2">
             <span className="h-9 w-9 rounded-xl bg-[image:var(--gradient-brand)] grid place-items-center text-brand-foreground font-display font-bold shadow-brand">
@@ -100,11 +115,31 @@ function App() {
             <button type="button" onClick={() => setTheme(prev => (prev === 'dark' ? 'light' : 'dark'))} className="rounded-full bg-secondary text-secondary-foreground px-3 py-2 text-sm font-medium hover:bg-secondary/80 transition-colors">
               {themeIcon}
             </button>
-            <a href="https://wa.link/yxoxsf" className="rounded-full bg-ink text-background px-5 py-2.5 text-sm font-medium hover:bg-brand transition-colors">
+            <a href="https://wa.link/yxoxsf" className="hidden md:inline-flex rounded-full bg-ink text-background px-5 py-2.5 text-sm font-medium hover:bg-brand transition-colors">
+              Let's Connect
+            </a>
+            <button type="button" onClick={() => setMobileMenuOpen(prev => !prev)} className="inline-flex items-center justify-center rounded-full border border-border bg-background p-3 text-sm text-foreground shadow-sm transition-colors hover:border-brand hover:text-brand md:hidden">
+              <span className="sr-only">Open mobile menu</span>
+              {mobileMenuOpen ? '✕' : '☰'}
+            </button>
+          </div>
+        </div>
+        <div className={`md:hidden absolute inset-x-0 top-full z-50 bg-background border-b border-border shadow-lg transition-transform duration-300 ${mobileMenuOpen ? 'translate-y-0 opacity-100 pointer-events-auto' : '-translate-y-full opacity-0 pointer-events-none'}`}>
+          <div className="max-w-7xl mx-auto px-6 py-5 space-y-4">
+            {navItems.map(item => (
+              <Link key={item.to} to={item.to} onClick={closeMobileMenu} className="block rounded-2xl px-4 py-3 text-sm font-medium text-foreground hover:bg-secondary hover:text-brand transition-colors">
+                {item.label}
+              </Link>
+            ))}
+            <a href="/#contact" onClick={event => { handleContactClick(event); closeMobileMenu(); }} className="block rounded-2xl px-4 py-3 text-sm font-medium text-foreground hover:bg-secondary hover:text-brand transition-colors">
+              Contact
+            </a>
+            <a href="https://wa.link/yxoxsf" onClick={closeMobileMenu} className="block rounded-2xl bg-ink px-4 py-3 text-center text-sm font-medium text-background hover:bg-brand transition-colors">
               Let's Connect
             </a>
           </div>
         </div>
+        {mobileMenuOpen && <div className="md:hidden fixed inset-0 z-40" onClick={closeMobileMenu} style={{top: 'calc(var(--header-height, 64px))'}} />}
       </header>
 
       <main>
