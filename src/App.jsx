@@ -452,7 +452,7 @@ function Footer() {
         <div className="flex gap-6">
           <a href="https://www.facebook.com/muhammad.faizan.776350" className="hover:text-brand">Facebook</a>
           <a href="https://www.linkedin.com/in/muhammad-faizan-ab4822360/" className="hover:text-brand">LinkedIn</a>
-          <a href="https://github.com/faizanpk774" className="hover:text-brand">GitHub</a>
+          <a href="https://github.com/faizanpk774-code/faizan-tech" className="hover:text-brand">GitHub</a>
         </div>
       </div>
     </footer>
