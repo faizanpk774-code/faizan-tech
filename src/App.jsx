@@ -180,7 +180,7 @@ function HomePage({ handleContactClick, heroPortrait }) {
             </div>
             <div className="mt-12 grid grid-cols-3 gap-6 max-w-md">
               <div>
-                <div className="text-3xl md:text-4xl font-display font-bold">120+</div>
+                <div className="text-3xl md:text-4xl font-display font-bold">50+</div>
                 <div className="text-xs text-muted-foreground mt-1 uppercase tracking-wider">Happy Clients</div>
               </div>
               <div>
@@ -188,7 +188,7 @@ function HomePage({ handleContactClick, heroPortrait }) {
                 <div className="text-xs text-muted-foreground mt-1 uppercase tracking-wider">Masteries</div>
               </div>
               <div>
-                <div className="text-3xl md:text-4xl font-display font-bold">60+</div>
+                <div className="text-3xl md:text-4xl font-display font-bold">50+</div>
                 <div className="text-xs text-muted-foreground mt-1 uppercase tracking-wider">Projects</div>
               </div>
             </div>
